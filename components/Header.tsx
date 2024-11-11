@@ -13,7 +13,7 @@ const Header = () => {
       />
       <Button
         variant={"outline"}
-        className="border-black border-2 hover:bg-primary hover:text-white"
+        className="border-black border-2 rounded-full hover:bg-primary hover:text-white"
       >
         Login
       </Button>
