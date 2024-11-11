@@ -16,7 +16,13 @@ const Hero = () => {
           Start Free Trial <ArrowRightIcon />
         </Button>
       </div>
-      <video src="/models.mp4" autoPlay loop muted className="w-3/5 md:w-2/3 lg:w-full" />
+      <video
+        src="/models.mp4"
+        autoPlay
+        loop
+        muted
+        className="w-3/5 md:w-2/3 lg:w-full rounded-md"
+      />
       <Image
         src="/ratings2.png"
         alt="hero"
