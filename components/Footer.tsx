@@ -1,6 +1,6 @@
 "use client";
 
-import { BotIcon, GitBranch, Inbox, XIcon } from "lucide-react";
+import { GitBranch, Inbox, XIcon } from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
@@ -47,7 +47,7 @@ const Footer = () => {
                 { icon: <GitBranch />, url: "https://github.com", label: "GitHub" },
                 { icon: <XIcon />, url: "https://twitter.com", label: "Twitter" },
                 { icon: <Inbox />, url: "https://linkedin.com", label: "LinkedIn" },
-              ].map(({ icon: Icon, url, label }) => (
+              ].map(({ icon, url, label }) => (
                 <button
                   key={label}
                   onClick={() => handleSocialClick(url)}
@@ -55,7 +55,7 @@ const Footer = () => {
                   tabIndex={0}
                   aria-label={`Visit our ${label} profile`}
                 >
-                  <BotIcon className="w-5 h-5" />
+                  {icon}
                 </button>
               ))}
             </div>
